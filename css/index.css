@@ -400,5 +400,8 @@ A {
         padding-left: 15px;
         padding-right: 10px;
     }
-}
-
+    .Pie-de-Pagina .grupo-1 .Red-Social a{
+        align-items: center;
+        text-align: center;
+    }
+}    
