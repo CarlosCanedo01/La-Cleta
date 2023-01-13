@@ -51,9 +51,13 @@ A {
     padding: 25px 20px;
     width: 100%;
 }
-.hero-elements{
+.container-hero-elements{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
 }
 .hero-titles{
     padding-top: 80px;
@@ -317,16 +321,45 @@ A {
     .Logo-Cleta-Copia img{
         scale: 70%;
     }
-    .hero{
-        align-items: left;
+    .container-hero-elements{
+        grid-template-columns: 1fr;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 0px;
+        padding-right: 70px;
+        scale:80%;
+        height: fit-content;
+        width: 40px;
+        text-align: left;
     }
     .hero-image{
         scale: 80%;
     }
-    .hero-elements{
-        grid-template-columns: 1fr;
-        scale: 50%;
-        align-items: left;
+    .hero-titles{
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .hero-titles h1{
+        font-size: 60px;
+        font-style: bold;
+        font-weight: 680;
+        text-align: center;
+        width: 340px;
+    }
+    .hero-titles h2{
+        font-size: 20px;
+        color: rgb(47, 100, 143);
+        text-align: left;
+        width: 400px;
+    }
+    .hero-titles h3{
+        padding-top: 10px;
+        font-size: 25px;
+        text-align: left;
+    }
+    .hero-titles p{
+        font-size: 10px;
+        width: 350px;
     }
     .newsletter-container {
         grid-template-columns: 1fr;
