@@ -2,7 +2,6 @@
 *{
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
 }
 /*general styles*/
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
@@ -124,7 +123,7 @@ A {
     padding: 30px;
     color: #fff;
 }
-.newsletter-content img{
+.newsletter-container .newsletter-content img{
     justify-content: right;
 }
 .newsletter-submit h3{
@@ -138,6 +137,9 @@ A {
 .submit input{
     font-size: 30px;
     font-style: bold;
+}
+.newsletter-container .newsletter-submit .input-container{
+    size: 40px;
 }
 
 /*Catalog*/
@@ -198,6 +200,9 @@ A {
     padding-left: 25px;
     padding-right: 20px;
 }
+.Aditional-Image img{
+    width: 550px;
+}
 .Aditional-text{
     justify-content: center;
     color: #fff;
@@ -229,6 +234,11 @@ A {
 .divider{
     padding: 70px;
     background-color: #fff;
+}
+.divider .divider-pic img{
+    display: flex;
+    width: 120px;
+    align-content: center;
 }
 /*Footer*/
 .Pie-de-Pagina{
@@ -290,28 +300,72 @@ A {
     font-size: 14px;
 }
 
-@media screen and (min-width:320px) and (max-width:480px){
-    .container{
-        width: 100%;
-        scale: 75%;
-    }
+@media screen and (min-width:320px) and (max-width:700px){ 
     header{
         width: 100%;
-        scale: 75%
+        scale: 80%;
+        align-content: center;
+        margin: auto;
     }
     nav{
         width: 100%;
         gap: 10px;
     }
+    .nav-list{
+        display: list-item;
+    }
     .Logo-Cleta-Copia img{
         scale: 70%;
     }
+    .hero{
+        align-items: left;
+    }
     .hero-image{
-        scale: 70%;
+        scale: 80%;
     }
     .hero-elements{
-        width: 100%;
         grid-template-columns: 1fr;
-        scale: 70%;
+        scale: 50%;
+        align-items: left;
+    }
+    .newsletter-container {
+        grid-template-columns: 1fr;
+        scale: 80%;
+        justify-items: center;
+        padding-inline: none;
+    }
+    .newsletter-submit h3{
+        text-align: left;
+        font-size: 25px;
+    }
+    .newsletter-container .newsletter-submit .input-container{
+        size: 20px;
+    }
+    .cards-container{
+        grid-template-columns: 1fr;
+    }
+    .container-aditional{
+        grid-template-columns: 1fr;
+        margin: auto;
+        scale: 80%;
+        text-align: center;
+        padding-left: 10px;
+    }
+    .Aditional-Image img{
+        width: 240px;
+        align-items: center;
+    }
+    .Aditional-text{
+        font-size: 20px;
+    }
+    .divider{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .Pie-de-Pagina .grupo-1{
+        grid-template-columns: 1fr;
+        padding-left: 15px;
+        padding-right: 10px;
     }
 }
+
